@@ -1,0 +1,198 @@
+:root {
+  --background: #232323;
+  --lift: #2c2c2c;
+  --faded: #838383;
+
+  /* * Pick an accent color below by commenting in one set, and commenting the others out */
+  /* !Salmon */
+  /* --accent: 7, 82%;
+  --l: 63%; */
+
+  /* !Blue */
+  --accent: 198, 76%;
+  --l: 51%;
+
+  /* !Orange */
+  /* --accent: 19, 97%;
+  --l: 51%; */
+
+  /* !Pink */
+  /* --accent: 334, 100%;
+  --l: 50%; */
+
+  /* !Purple */
+  /* --accent: 265, 83%;
+  --l: 57%; */
+
+  /* !Green */
+  /* --accent: 162, 95%;
+  --l: 34%; */
+
+  /* !Yellow */
+  /* --accent: 36, 100%;
+  --l: 56%; */
+
+  --color-primary: hsl(var(--accent), var(--l));
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: var(--background);
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  height: 75px;
+  width: 100vw;
+  background-color: var(--color-primary);
+  padding: 0px 35px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  width: 60vw;
+  text-align: center;
+}
+
+.big-title {
+  font-size: 64px;
+  color: var(--color-primary);
+}
+
+p {
+  font-size: 20px;
+}
+
+.word {
+  font-size: 32px;
+  color: var(--color-primary);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.nav-btn {
+  background-color: var(--color-primary);
+  border-radius: 3px;
+  color: white;
+  min-width: 50px;
+  transition: all 0.05s ease-in-out;
+}
+
+.nav-btn:hover {
+  --darken: hsl(var(--accent), calc(var(--l) - 5%));
+background-color: var(--darken);
+  transition: all 0.05s ease-in-out;
+}
+
+button {
+  min-width: 150px;
+  height: 45px;
+  font-size: 25px;
+  border-radius: 3px;
+  background-color: transparent;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  margin: 10px;
+  transition: all 0.1s ease-in-out;
+}
+
+button:active {
+  background-color: var(--color-primary);
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+input, select {
+  width: 225px;
+  margin: 0;
+  padding: 5;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 3px;
+  height: 30px;
+  font-size: 18px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.row-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.col-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card {
+  background-color: var(--lift);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.5);
+}
+
+.card-image {
+  width: 300px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.colored-text {
+  color: var(--color-primary);
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+#fortune {
+  color: white;
+}
+
+#center-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background);
+}
+
+
+/* ? CREATED BY BRADYYYYYY */
+
